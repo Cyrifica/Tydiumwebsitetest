@@ -1,0 +1,61 @@
+html {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    width: 70%;
+}
+
+body, button {
+    font-family: 'Inconsolata', monospace;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+    color: #dfd;
+}
+
+p {
+    font-size: 20px;
+}
+
+button {
+    margin: 20px;
+    border-radius: 100px;
+    color: black;
+    border: 5px solid black;
+    font-size: 20px;
+    padding: 10px;
+    transition: background-color 0.5s, transform 0.1s;
+}
+
+#color-button:active {
+    transform: scale(0.9);
+}
+
+input {
+    display: block;
+}
+
+form {
+    width: 200px;
+    display: inline-block;
+}
+
+@keyframes spin {
+    from {
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    to {
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+
+#frog {
+    animation: spin 2s infinite linear;
+    height: 200px;
+}
